@@ -30,8 +30,7 @@ Partial Class FormTest1
         'LabelMsg
         '
         Me.LabelMsg.AutoSize = True
-        Me.LabelMsg.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelMsg.Location = New System.Drawing.Point(0, 0)
+        Me.LabelMsg.Location = New System.Drawing.Point(3, 0)
         Me.LabelMsg.Name = "LabelMsg"
         Me.LabelMsg.Size = New System.Drawing.Size(62, 13)
         Me.LabelMsg.TabIndex = 0
@@ -40,11 +39,12 @@ Partial Class FormTest1
         'PanelBody
         '
         Me.PanelBody.AutoScroll = True
+        Me.PanelBody.AutoSize = True
         Me.PanelBody.Controls.Add(Me.LabelMsg)
         Me.PanelBody.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBody.Location = New System.Drawing.Point(0, 0)
         Me.PanelBody.Name = "PanelBody"
-        Me.PanelBody.Size = New System.Drawing.Size(310, 164)
+        Me.PanelBody.Size = New System.Drawing.Size(310, 162)
         Me.PanelBody.TabIndex = 1
         '
         'FormTest1
@@ -53,16 +53,17 @@ Partial Class FormTest1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(310, 164)
+        Me.ClientSize = New System.Drawing.Size(310, 162)
         Me.Controls.Add(Me.PanelBody)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximumSize = New System.Drawing.Size(800, 600)
+        Me.MaximumSize = New System.Drawing.Size(800, 200)
         Me.MinimumSize = New System.Drawing.Size(100, 100)
         Me.Name = "FormTest1"
         Me.Text = "FormTest1"
         Me.PanelBody.ResumeLayout(False)
         Me.PanelBody.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
