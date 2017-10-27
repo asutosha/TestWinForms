@@ -25,6 +25,9 @@ Partial Class FormTest1
         Me.LabelMsg = New System.Windows.Forms.Label()
         Me.PanelBody = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PanelFixedHeader = New System.Windows.Forms.Panel()
+        Me.PanelFixedFooter = New System.Windows.Forms.Panel()
+        Me.PanelFixedSide = New System.Windows.Forms.Panel()
         Me.PanelBody.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,23 +49,57 @@ Partial Class FormTest1
         Me.PanelBody.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBody.Location = New System.Drawing.Point(3, 53)
         Me.PanelBody.Name = "PanelBody"
-        Me.PanelBody.Size = New System.Drawing.Size(626, 106)
+        Me.PanelBody.Size = New System.Drawing.Size(526, 56)
         Me.PanelBody.TabIndex = 1
         '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.AutoSize = True
-        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.PanelBody, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.PanelFixedHeader, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PanelFixedFooter, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.PanelFixedSide, 1, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(632, 162)
         Me.TableLayoutPanel1.TabIndex = 2
+        '
+        'PanelFixedHeader
+        '
+        Me.PanelFixedHeader.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PanelFixedHeader.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelFixedHeader.Location = New System.Drawing.Point(3, 3)
+        Me.PanelFixedHeader.Name = "PanelFixedHeader"
+        Me.PanelFixedHeader.Size = New System.Drawing.Size(526, 44)
+        Me.PanelFixedHeader.TabIndex = 2
+        '
+        'PanelFixedFooter
+        '
+        Me.PanelFixedFooter.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.TableLayoutPanel1.SetColumnSpan(Me.PanelFixedFooter, 2)
+        Me.PanelFixedFooter.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelFixedFooter.Location = New System.Drawing.Point(3, 115)
+        Me.PanelFixedFooter.Name = "PanelFixedFooter"
+        Me.PanelFixedFooter.Size = New System.Drawing.Size(626, 44)
+        Me.PanelFixedFooter.TabIndex = 3
+        '
+        'PanelFixedSide
+        '
+        Me.PanelFixedSide.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.PanelFixedSide.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelFixedSide.Location = New System.Drawing.Point(535, 3)
+        Me.PanelFixedSide.Name = "PanelFixedSide"
+        Me.TableLayoutPanel1.SetRowSpan(Me.PanelFixedSide, 2)
+        Me.PanelFixedSide.Size = New System.Drawing.Size(94, 106)
+        Me.PanelFixedSide.TabIndex = 4
         '
         'FormTest1
         '
@@ -89,4 +126,7 @@ Partial Class FormTest1
     Friend WithEvents LabelMsg As Label
     Friend WithEvents PanelBody As Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents PanelFixedHeader As Panel
+    Friend WithEvents PanelFixedFooter As Panel
+    Friend WithEvents PanelFixedSide As Panel
 End Class
