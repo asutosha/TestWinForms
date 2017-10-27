@@ -29,11 +29,10 @@ Partial Class FormTest1
         '
         'LabelMsg
         '
-        Me.LabelMsg.AutoSize = True
         Me.LabelMsg.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LabelMsg.Location = New System.Drawing.Point(0, 0)
         Me.LabelMsg.Name = "LabelMsg"
-        Me.LabelMsg.Size = New System.Drawing.Size(62, 13)
+        Me.LabelMsg.Size = New System.Drawing.Size(116, 100)
         Me.LabelMsg.TabIndex = 0
         Me.LabelMsg.Text = "Message...."
         '
@@ -60,7 +59,6 @@ Partial Class FormTest1
         Me.Name = "FormTest1"
         Me.Text = "FormTest1"
         Me.PanelBody.ResumeLayout(False)
-        Me.PanelBody.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
