@@ -30,7 +30,8 @@ Partial Class FormTest1
         'LabelMsg
         '
         Me.LabelMsg.AutoSize = True
-        Me.LabelMsg.Location = New System.Drawing.Point(3, 0)
+        Me.LabelMsg.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LabelMsg.Location = New System.Drawing.Point(0, 0)
         Me.LabelMsg.Name = "LabelMsg"
         Me.LabelMsg.Size = New System.Drawing.Size(62, 13)
         Me.LabelMsg.TabIndex = 0
