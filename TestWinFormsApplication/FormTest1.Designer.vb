@@ -23,6 +23,8 @@ Partial Class FormTest1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.LabelMsg = New System.Windows.Forms.Label()
+        Me.PanelBody = New System.Windows.Forms.Panel()
+        Me.PanelBody.SuspendLayout()
         Me.SuspendLayout()
         '
         'LabelMsg
@@ -35,6 +37,15 @@ Partial Class FormTest1
         Me.LabelMsg.TabIndex = 0
         Me.LabelMsg.Text = "Message...."
         '
+        'PanelBody
+        '
+        Me.PanelBody.AutoScroll = True
+        Me.PanelBody.Controls.Add(Me.LabelMsg)
+        Me.PanelBody.Location = New System.Drawing.Point(12, 26)
+        Me.PanelBody.Name = "PanelBody"
+        Me.PanelBody.Size = New System.Drawing.Size(116, 100)
+        Me.PanelBody.TabIndex = 1
+        '
         'FormTest1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -42,16 +53,18 @@ Partial Class FormTest1
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(310, 164)
-        Me.Controls.Add(Me.LabelMsg)
+        Me.Controls.Add(Me.PanelBody)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximumSize = New System.Drawing.Size(800, 600)
         Me.MinimumSize = New System.Drawing.Size(100, 100)
         Me.Name = "FormTest1"
         Me.Text = "FormTest1"
+        Me.PanelBody.ResumeLayout(False)
+        Me.PanelBody.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents LabelMsg As Label
+    Friend WithEvents PanelBody As Panel
 End Class
