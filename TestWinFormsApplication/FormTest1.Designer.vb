@@ -29,12 +29,11 @@ Partial Class FormTest1
         '
         'LabelMsg
         '
-        Me.LabelMsg.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelMsg.Location = New System.Drawing.Point(0, 0)
+        Me.LabelMsg.Location = New System.Drawing.Point(3, 0)
         Me.LabelMsg.Name = "LabelMsg"
-        Me.LabelMsg.Size = New System.Drawing.Size(116, 100)
+        Me.LabelMsg.Size = New System.Drawing.Size(13, 13)
         Me.LabelMsg.TabIndex = 0
-        Me.LabelMsg.Text = "Message...."
+        Me.LabelMsg.Text = "Msg...."
         '
         'PanelBody
         '
