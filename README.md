@@ -5,13 +5,13 @@ In this solution i am trying to create a form that responds to some dynamic text
 Here's the basic lay-out i am ultimately seeking:
 
 	--------------------------------------------------
-	|         form header               |            | 
+	|     fixed-size form header        |            | 
 	------------------------------------|   side     |
 	|                                   |   panel    |
 	|      dynamic content panel        |   stuff    |
 	|                                   |            |
 	--------------------------------------------------
-	|   form trailer(essentially: OK, Close buttons) |               
+	|    fixed-size form trailer        (OK, Close)  |               
 	--------------------------------------------------
 
 i want the form to:
