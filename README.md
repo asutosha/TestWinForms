@@ -11,7 +11,7 @@ Here's the basic lay-out i am ultimately seeking:
 	|      dynamic content panel        |   stuff    |
 	|                                   |            |
 	--------------------------------------------------
-	|    fixed-size form trailer        (OK, Close)  |               
+	|            fixed-size form trailer             |               
 	--------------------------------------------------
 
 i want the form to:
