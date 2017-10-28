@@ -106,11 +106,10 @@ Partial Class FormTest1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(632, 162)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximumSize = New System.Drawing.Size(800, 300)
+        Me.MaximumSize = New System.Drawing.Size(800, 400)
         Me.MinimumSize = New System.Drawing.Size(100, 100)
         Me.Name = "FormTest1"
         Me.Text = "FormTest1"
